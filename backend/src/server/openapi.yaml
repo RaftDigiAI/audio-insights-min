@@ -1,0 +1,13 @@
+openapi: 3.0.3
+info:
+  title: Audio Insights Min API
+  version: 1.0.0
+paths:
+  /analyze:
+    $ref: './openapi/paths/analyze.yaml'
+components:
+  schemas:
+    AnalyzeAudioRequest:
+      $ref: './openapi/schemas/requests/AnalyzeAudioRequest.yaml'
+    AnalyzeAudioResponse:
+      $ref: './openapi/schemas/responses/AnalyzeAudioResponse.yaml'

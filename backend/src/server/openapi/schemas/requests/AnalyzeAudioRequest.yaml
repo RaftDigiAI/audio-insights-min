@@ -1,0 +1,14 @@
+type: object
+properties:
+  criteria:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: number
+        criterion:
+          type: string
+
+required:
+  - criteria

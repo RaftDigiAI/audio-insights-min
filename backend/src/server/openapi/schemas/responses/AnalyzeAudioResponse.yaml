@@ -1,0 +1,17 @@
+type: object
+properties:
+  results:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: number
+        criterion:
+          type: string
+        answer:
+          type: boolean
+  transcription:
+    type: string
+required:
+  - results

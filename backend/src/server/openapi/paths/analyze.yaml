@@ -1,0 +1,26 @@
+post:
+  summary: Analyzes an audio file
+  operationId: analyze
+  x-exegesis-controller: analyzeController
+  requestBody:
+    content:
+      multipart/form-data:
+        schema:
+          type: object
+          properties:
+            file:
+              type: string
+              format: binary
+            request:
+              content:
+                application/json:
+                  schema:
+                    $ref: '../schemas/requests/AnalyzeAudioRequest.yaml'
+          required:
+            - file
+            - request
+  responses:
+    200:
+      content:
+        application/json:
+          $ref: '../schemas/responses/AnalyzeAudioResponse.yaml'

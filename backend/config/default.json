@@ -1,0 +1,7 @@
+{
+  "cors": {
+    "allowedOrigins": "http://localhost:5174,https://localhost:5174"
+  },
+  "openAIToken": "",
+  "openAIModel": "gpt-4-1106-preview"
+}
